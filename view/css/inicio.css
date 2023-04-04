@@ -1,0 +1,28 @@
+page .content_graphic .graphic * {
+/*  box-sizing: default !important;*/
+  margin: default !important;
+  padding: default !important;
+  transition: default !important;
+  font-family: default !important;
+  user-select: default !important;
+  outline: default !important;
+  border-style: default !important;
+  font-family: default !important;
+}
+
+page .content_graphic .graphic {
+  position: relative;
+  width: calc(100% - 5px);
+}
+
+page .content_graphic .graphic:before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  content: '';
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: var(--primary_background);
+  z-index: 1;
+}

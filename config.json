@@ -1,0 +1,11 @@
+{
+    "name": "",
+    "root_page": "./view/page/",
+    "root_component": "./view/component/",
+    "root_js_library": "./control/library/",
+    "root_css": "./view/css/",
+    "root_js": "./control/script/",
+    "root_src": "./view/src/",
+    "root_file": "./view/src/file/",
+    "root_absolute": "https://facturacion.moronanet.com"
+}
