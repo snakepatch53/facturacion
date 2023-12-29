@@ -3,10 +3,10 @@ include('model/dao/Mysql.php');
 include('model/dao/InformacionDao.php');
 $informacionDao = new InformacionDao();
 $informacion_r = mysqli_fetch_assoc($informacionDao->select());
-include('model/library/loadInformacion.php');
 date_default_timezone_set('America/Guayaquil');
 $date = date('Y-m-d');
 $dateTime = date('Y-m-d H:i:s');
+include('model/library/loadInformacion.php');
 ?>
 <!DOCTYPE html>
 <html lang="es">

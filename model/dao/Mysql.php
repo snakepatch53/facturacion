@@ -17,7 +17,7 @@ class Mysql
     }
     public function conectar()
     {
-        $this->conn = mysqli_connect("localhost", "moronanet", "ikVtGEE6=m", "moronane_facturacion");
+        $this->conn = mysqli_connect("localhost", "root", "", "facturacion");
         mysqli_set_charset($this->conn, "utf8");
         return $this->conn;
     }

@@ -4,7 +4,7 @@
 // $proyect = json_decode(file_get_contents('https://facturacion.moronanet.com/config.json'), true);
 
 $proyect = array(
-    "name" => "",
+    "name" => "/old/facturacion",
     "root_page" => "./view/page/",
     "root_component" => "./view/component/",
     "root_js_library" => "./control/library/",
@@ -12,11 +12,12 @@ $proyect = array(
     "root_js" => "./control/script/",
     "root_src" => "./view/src/",
     "root_file" => "./view/src/file/",
-    "root_absolute" => "https://facturacion.moronanet.com"
+    "root_absolute" => "http://localhost/old/facturacion/",
 );
-if ($_SERVER['HTTPS'] != "on") {
-    header("location: " . $proyect['root_absolute']);
-}
+
+// if ($_SERVER['HTTPS'] != "on") {
+//     header("location: " . $proyect['root_absolute']);
+// }
 
 include 'model/library/Router/Route.php';
 include 'model/library/Router/Router.php';

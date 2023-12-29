@@ -1,4 +1,6 @@
-INSERT INTO informacion SET
+INSERT INTO
+    informacion
+SET
     informacion_id = 1,
     informacion_nombre = 'Maria Auxiliadora',
     informacion_sigla = 'M.A.',
@@ -27,7 +29,9 @@ INSERT INTO informacion SET
     informacion_warnning = '#FFCD42',
     informacion_error = '#DD5145';
 
-INSERT INTO privilegio SET 
+INSERT INTO
+    privilegio
+SET
     privilegio_id = 1,
     privilegio_nombre = "Administrador",
     privilegio_informacion = 1,
@@ -40,10 +44,12 @@ INSERT INTO privilegio SET
     privilegio_compra = 1,
     privilegio_venta = 1;
 
-INSERT INTO usuario SET
+INSERT INTO
+    usuario
+SET
     usuario_id = 1,
     usuario_nombre = 'Administrador',
     usuario_user = 'admin',
-    usuario_pass = 'admin',
+    usuario_pass = '21232f297a57a5a743894a0e4a801fc3',
     usuario_foto = null,
     privilegio_id = 1;
